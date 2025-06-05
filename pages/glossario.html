@@ -19,11 +19,11 @@
 
         .term-entry {
         margin-bottom: 20px;
-        padding-left: 15px;
+        padding:5px 0 5px 15px;
         border-left: 3px solid #2A4D69;
         background: #F5F7FA;
         color: #444B54;
-        border-radius: 4px;
+        border-radius: 10px;
         }
 
         .term-entry p {
@@ -77,7 +77,6 @@
         }
 
         .search-box {
-        width: 100%;
         max-width: 400px;
         margin: 0;
         display: flex;
@@ -124,6 +123,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 10px 0 10px 0;
         }
 
         .index-card h2 {
@@ -185,6 +185,12 @@
         border: 1.5px solid #eaf4fb;
         padding: 38px 38px 38px 38px;
         }
+        code {
+            color: #188038;
+            font-style: italic;
+            font-size: 110%;
+            font-weight: 600;
+        }
 
         @media (max-width: 900px) {
         .glossario-header {
@@ -205,10 +211,57 @@
         }
         }
         .highlight {
-        background-color: #b3e5fc;
-        color: #2A4D69;
-        border-radius: 3px;
-        padding: 0 2px;
+            background-color: #b3e5fc;
+            color: #2A4D69;
+            border-radius: 3px;
+            padding: 0 2px;
+        }
+
+        .home-link {
+            position: fixed;
+            bottom: 32px;
+            left: 32px;
+            z-index: 1000;
+            background: #2A4D69;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 22px 10px 18px;
+            font-size: 1.08em;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(42, 77, 105, 0.10);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .home-link .home-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+            font-size: 1.2em;
+        }
+
+        .home-link:hover,
+        .home-link:focus {
+            background: #63ACE5;
+            color: #2A4D69;
+        }
+
+        @media (max-width: 600px) {
+            .home-link {
+                bottom: 16px;
+                left: 12px;
+                padding: 8px 14px 8px 12px;
+                font-size: 0.98em;
+                border-radius: 20px;
+            }
+            .home-link .home-icon {
+                width: 18px;
+                height: 18px;
+            }
         }
     </style>
 </head>
@@ -234,7 +287,14 @@
                 </ul>
         </aside>
     </div>
- 
+      
+    <a href="../index.html" class="home-link">
+        <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-5h-6v5H4a1 1 0 0 1-1-1v-8.5z"/>
+        </svg>
+        Menu Principal
+    </a>
+         
     <div class="glossario-container">
         <section id="termos-gerais">
             <h2>1. Termos Gerais do Projeto</h2>

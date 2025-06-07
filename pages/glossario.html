@@ -254,19 +254,19 @@
             bottom: 32px;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 1000; 
+            z-index: 1000;
             background: #2A4D69;
             color: #fff;
             border: none;
-            border-radius: 50%; 
-            width: 44px;  
-            height: 44px; 
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
             box-shadow: 0 2px 8px rgba(42, 77, 105, 0.15);
             text-decoration: none;
-            display: none; 
-            align-items: center; 
+            display: none;
+            align-items: center;
             justify-content: center;
-            opacity: 0.65; 
+            opacity: 0.65;
             transition: opacity 0.3s, background-color 0.2s, color 0.2s;
         }
 
@@ -277,9 +277,9 @@
 
         .scroll-to-top-button:hover,
         .scroll-to-top-button:focus {
-            background: #63ACE5; 
+            background: #63ACE5;
             color: #2A4D69;
-            opacity: 1; 
+            opacity: 1;
         }
 
         @media (max-width: 600px) {
@@ -288,18 +288,18 @@
                 left: 22px;
                 padding: 6px;
             }
-            
+
             .back-arrow svg {
                 width: 20px;
                 height: 20px;
             }
 
             .header-content h1{
-                padding: 28px 0 18px 40px; 
+                padding: 28px 0 18px 40px;
             }
 
             .scroll-to-top-button {
-                bottom: 20px; 
+                bottom: 20px;
                 width: 40px;
                 height: 40px;
             }
@@ -342,63 +342,63 @@
             </svg>
         </a>
     </div>
-         
+
     <div class="glossario-container">
         <section id="termos-gerais">
-            <h2>1. Termos Gerais do Projeto</h2>
+            <h2>Termos Gerais do Projeto</h2>
 
             <div class="term-entry" id="aluno">
-                <h3>1.1. Aluno (Student)</h3>
+                <h3>Aluno (Student)</h3>
                 <p>Indivíduo matriculado na escola e paciente do setor clínico, cujos dados cadastrais e de saúde são gerenciados pelo sistema.</p>
                 <p>Nos diagramas, é referido como <code>Student</code>.</p>
             </div>
 
             <div class="term-entry" id="backend">
-                <h3>1.2. Backend</h3>
+                <h3>Backend</h3>
                 <p>A parte do sistema que lida com a lógica de negócios, processamento de dados e interações com o banco de dados.</p>
                 <p>No projeto, está sendo desenvolvido com Django e Django REST framework.</p>
             </div>
 
             <div class="term-entry" id="biblioteca">
-                <h3>1.3. Biblioteca (Programação)</h3>
+                <h3>Biblioteca (Programação)</h3>
                 <p>Conjunto de funções, classes e módulos reutilizáveis que fornecem funcionalidades específicas.</p>
                 <p>Em linguagens de programação, bibliotecas ajudam a acelerar o desenvolvimento.</p>
             </div>
 
             <div class="term-entry" id="controle-acesso">
-                <h3>1.4. Controle de Acesso</h3>
+                <h3>Controle de Acesso</h3>
                 <p>Mecanismo que define permissões para cada usuário (ator) conforme seu perfil (role) - administrador (<code>sa_admin</code>), gestor (<code>sa_manager</code>) ou profissional da saúde (<code>sa_health_profissional</code>) restringindo o acesso a funcionalidades e dados específicos do sistema.</p>
             </div>
 
             <div class="term-entry" id="frontend">
-                <h3>1.5. Frontend</h3>
+                <h3>Frontend</h3>
                 <p>A parte do sistema em que o usuário interage diretamente, como botões, menus e imagens.</p>
                 <p>Em outras palavras, é a interface do usuário, a camada que o usuário vê e com a qual interage.</p>
             </div>
 
             <div class="term-entry" id="interface-responsiva">
-                <h3>1.6. Interface Responsiva</h3>
+                <h3>Interface Responsiva</h3>
                 <p>Interface do sistema que se adapta a diferentes tamanhos de tela, como computadores, tablets e dispositivos móveis, garantindo uma boa experiência de usuário em todas as plataformas.</p>
             </div>
 
             <div class="term-entry" id="prontuario-digital">
-                <h3>1.7. Prontuário Digital (Medical Record)</h3>
+                <h3>Prontuário Digital (Medical Record)</h3>
                 <p>Sistema informatizado para registro, armazenamento, consulta e gerenciamento seguro e eficiente das informações clínicas dos alunos/pacientes.</p>
             </div>
 
             <div class="term-entry" id="registro-atendimentos">
-                <h3>1.8. Registro de Atendimentos (Medical Entry / Medical Record)</h3>
+                <h3>Registro de Atendimentos (Medical Entry / Medical Record)</h3>
                 <p>Funcionalidade que permite aos profissionais da saúde inserir, visualizar e atualizar dados sobre as consultas, avaliações, evoluções e outros procedimentos realizados com os alunos.</p>
                 <p>No projeto, as entradas de prontuário dos alunos são referidas como <code>MedicalEntry</code>, e a reunião destas entradas, agrupadas pelo id de cada aluno, formam o prontuário completo do mesmo, referido como <code>Medical Record</code>.</p>
             </div>
 
             <div class="term-entry" id="logs-geracao-relatorio">
-                <h3>1.9. Logs de geração de relatório (ReportLog)</h3>
+                <h3>Logs de geração de relatório (ReportLog)</h3>
                 <p>Funcionalidade que registra metadados sobre a geração de relatórios de atendimentos (ex: quem gerou, quando, tipo de relatório), sem armazenar o conteúdo do relatório em si no banco de dados principal, para otimizar o armazenamento.</p>
             </div>
 
             <div class="term-entry" id="usuario">
-                <h3>1.10. Usuário (User)</h3>
+                <h3>Usuário (User)</h3>
                 <p>Indivíduo que interage com o sistema, podendo ser um administrador, gestor ou profissional da saúde.</p>
                 <p>Cada usuário possui credenciais de acesso e um perfil (role) que define suas permissões.</p>
                 <p>Nos diagramas, referido como <code>User</code>.</p>
@@ -406,143 +406,143 @@
         </section>
 
         <section id="termos-tecnicos">
-            <h2>2. Termos Técnicos e de Diagramas</h2>
+            <h2>Termos Técnicos e de Diagramas</h2>
 
             <div class="term-entry" id="abstractuser">
-                <h3>2.1. AbstractUser (Django)</h3>
+                <h3>AbstractUser (Django)</h3>
                 <p>Classe base fornecida pelo Django que oferece a implementação fundamental de um sistema de usuário (autenticação, campos como <code>username</code>, <code>password</code>, <code>email</code>, etc.), permitindo customizações como a adição do campo <code>role</code> para diferentes perfis de usuário no projeto.</p>
             </div>
 
             <div class="term-entry" id="api">
-                <h3>2.2. API (Application Programming Interface)</h3>
+                <h3>API (Application Programming Interface)</h3>
                 <p>Interface que define como diferentes componentes de software devem interagir.</p>
                 <p>No contexto do projeto, o Django REST framework é usado para construir APIs que permitem a comunicação entre o frontend e o backend.</p>
             </div>
 
             <div class="term-entry" id="ator">
-                <h3>2.3. Ator (Actor)</h3>
+                <h3>Ator (Actor)</h3>
                 <p>Entidade externa que interage com o sistema.</p>
                 <p>No Diagrama de Casos de Uso, são representados como <code>sa_admin</code> (administrador do sistema), <code>sa_health_profissional</code> (profissional de saúde) e <code>sa_manager</code> (gestor).</p>
             </div>
 
             <div class="term-entry" id="atributo">
-                <h3>2.4. Atributo (Attribute)</h3>
+                <h3>Atributo (Attribute)</h3>
                 <p>Uma característica ou propriedade de uma entidade ou classe.</p>
                 <p>Por exemplo, <code>name</code> (Nome), <code>dob</code> (Data de Nascimento), <code>email</code> são atributos da entidade <code>Student</code> (Estudante).</p>
             </div>
 
             <div class="term-entry" id="boundary">
-                <h3>2.5. Boundary (Interface)</h3>
+                <h3>Boundary (Interface)</h3>
                 <p>Elemento em diagramas (como o de Sequência) que representa a interface com a qual o ator interage, como uma tela do sistema (ex: <code>Student Page</code> no diagrama de sequência).</p>
             </div>
 
             <div class="term-entry" id="cardinalidade">
-                <h3>2.6. Cardinalidade (Cardinality)</h3>
+                <h3>Cardinalidade (Cardinality)</h3>
                 <p>Indica o número de instâncias de uma entidade que podem estar relacionadas a instâncias de outra entidade (ex: (0,n) zero para muitos; (1,1) um para um).</p>
                 <p>Visível nos Diagramas de Entidade-Relacionamento, Lógico e de Classe.</p>
             </div>
 
             <div class="term-entry" id="caso-de-uso">
-                <h3>2.7. Caso de Uso (Use Case)</h3>
+                <h3>Caso de Uso (Use Case)</h3>
                 <p>Descreve uma sequência de ações que o sistema pode realizar.</p>
                 <p>Exemplos do Diagrama de Casos de Uso: <code>suc_manage_students</code> (Gerenciar Alunos), <code>suc_generate_report</code> (Gerar Relatório).</p>
             </div>
 
             <div class="term-entry" id="chave-estrangeira">
-                <h3>2.8. Chave Estrangeira (Foreign Key - FK)</h3>
+                <h3>Chave Estrangeira (Foreign Key - FK)</h3>
                 <p>Um campo (ou conjunto de campos) em uma tabela que estabelece um link entre os dados em duas tabelas.</p>
                 <p>Ela referencia a chave primária de outra tabela.</p>
                 <p>Indicada com <code>fk_</code> no Diagrama Lógico (ex: <code>fk_User_uuid</code> na tabela <code>Health Profile</code>).</p>
             </div>
 
             <div class="term-entry" id="chave-primaria">
-                <h3>2.9. Chave Primária (Primary Key - PK)</h3>
+                <h3>Chave Primária (Primary Key - PK)</h3>
                 <p>Um campo (ou conjunto de campos) que identifica unicamente cada registro em uma tabela do banco de dados.</p>
                 <p>Indicada com um ícone de chave no Diagrama Lógico (ex: <code>uuid</code> na tabela <code>User</code>).</p>
             </div>
 
             <div class="term-entry" id="classe">
-                <h3>2.10. Classe (Class)</h3>
+                <h3>Classe (Class)</h3>
                 <p>Modelo para criar objetos em programação orientada a objetos.</p>
                 <p>Define atributos e métodos que os objetos terão.</p>
                 <p>Presente no Diagrama de Classes (ex: <code>Student</code>, <code>User</code>, <code>ReportService</code>).</p>
             </div>
 
             <div class="term-entry" id="controlador">
-                <h3>2.11. Controlador (Controller)</h3>
+                <h3>Controlador (Controller)</h3>
                 <p>Representa a lógica de negócios de uma determinada classe do sistema.</p>
                 <p>No diagrama de sequência, a classe <code>Student</code> (referenciada como <code>Student Entity</code>) manipula a lógica de negócio, através de métodos para operações de estudante.</p>
                 <p>O termo é comumente usado em sistemas MVC, estrutura do qual o Django REST Framework faz uso, porém neste a controller é renomeada como VIEW, assim constituíndo, em Django o modelo MVT.</p>
             </div>
 
             <div class="term-entry" id="diagrama-caso-uso">
-                <h3>2.12. Diagrama de Caso de Uso (Use Case Diagram)</h3>
+                <h3>Diagrama de Caso de Uso (Use Case Diagram)</h3>
                 <p>Representação visual das interações entre os atores e o sistema, mostrando as principais funcionalidades (casos de uso) que o sistema oferece.</p>
             </div>
 
             <div class="term-entry" id="diagrama-classe">
-                <h3>2.13. Diagrama de Classe (Class Diagram)</h3>
+                <h3>Diagrama de Classe (Class Diagram)</h3>
                 <p>Tipo de diagrama da UML que descreve a estrutura de um sistema mostrando suas classes, atributos, métodos e os relacionamentos entre elas.</p>
             </div>
 
             <div class="term-entry" id="diagrama-entidade-relacionamento">
-                <h3>2.14. Diagrama de Entidade-Relacionamento (Entity-Relationship Diagram)</h3>
+                <h3>Diagrama de Entidade-Relacionamento (Entity-Relationship Diagram)</h3>
                 <p>Modelo conceitual que descreve a estrutura de dados de um banco de dados, mostrando entidades, seus atributos e os relacionamentos entre elas.</p>
             </div>
 
             <div class="term-entry" id="diagrama-sequencia">
-                <h3>2.15. Diagrama de Sequência (Sequence Diagram)</h3>
+                <h3>Diagrama de Sequência (Sequence Diagram)</h3>
                 <p>Diagrama UML que mostra a ordem temporal das interações entre objetos (ou atores e o sistema) para realizar uma funcionalidade específica ou parte dela.</p>
             </div>
 
             <div class="term-entry" id="diagrama-logico">
-                <h3>2.16. Diagrama Lógico (Logic Diagram)</h3>
+                <h3>Diagrama Lógico (Logic Diagram)</h3>
                 <p>Representação da estrutura do banco de dados como ele será implementado, mostrando tabelas, colunas, tipos de dados, chaves primárias e estrangeiras.</p>
             </div>
 
             <div class="term-entry" id="django">
-                <h3>2.17. Django</h3>
+                <h3>Django</h3>
                 <p>Framework de desenvolvimento web, escrito em Python.</p>
                 <p>Utilizado no backend do projeto.</p>
             </div>
 
             <div class="term-entry" id="django-app">
-                <h3>2.18. Django App</h3>
+                <h3>Django App</h3>
                 <p>Um submódulo de um projeto Django, projetado para realizar uma função específica.</p>
                 <p>O projeto está estruturado com apps como "estudantes" e "autenticação".</p>
             </div>
 
             <div class="term-entry" id="drf">
-                <h3>2.19. Django REST framework (DRF)</h3>
+                <h3>Django REST framework (DRF)</h3>
                 <p>Uma biblioteca para construir APIs Web com Django.</p>
                 <p>Utilizada no projeto para criar os endpoints da API.</p>
             </div>
 
             <div class="term-entry" id="endpoint">
-                <h3>2.20. Endpoint</h3>
+                <h3>Endpoint</h3>
                 <p>URL específica onde uma API pode ser acessada por uma aplicação cliente.</p>
                 <p>Por exemplo, <code>/api/students/</code> é o endpoint usado para listar ou criar alunos.</p>
             </div>
 
             <div class="term-entry" id="entidade">
-                <h3>2.21. Entidade (Entity)</h3>
+                <h3>Entidade (Entity)</h3>
                 <p>Objeto do mundo real que é relevante para o sistema e sobre o qual os dados são armazenados.</p>
                 <p>No DER, exemplos são <code>Student</code>, <code>User</code>, <code>Medical Entry</code>.</p>
             </div>
 
             <div class="term-entry" id="extensao">
-                <h3>2.22. Extensão (&lt;&lt;extend&gt;&gt;)</h3>
+                <h3>Extensão (&lt;&lt;extend&gt;&gt;)</h3>
                 <p>Relacionamento em Diagramas de Caso de Uso onde um caso de uso pode opcionalmente estender o comportamento de outro caso de uso base.</p>
                 <p>Ex: <code>suc_generate_report</code> estende <code>suc_view_students_history</code>.</p>
             </div>
 
             <div class="term-entry" id="healthprofile">
-                <h3>2.23. HealthProfile (Perfil de Saúde)</h3>
+                <h3>HealthProfile (Perfil de Saúde)</h3>
                 <p>Entidade/Classe que armazena informações específicas de profissionais da saúde, como especialidade (<code>speciality</code>) e número do conselho (<code>council_number</code>), vinculada a um <code>User</code> (usuário).</p>
             </div>
 
             <div class="term-entry" id="http-status-codes">
-                <h3>2.24. HTTP Status Codes</h3>
+                <h3>HTTP Status Codes</h3>
                 <p>Códigos de resposta padrão dados por um servidor web a uma requisição HTTP:</p>
                 <ul>
                     <li><code>HTTP_200_OK</code>: Requisição bem-sucedida.</li>
@@ -552,13 +552,13 @@
             </div>
 
             <div class="term-entry" id="metodo">
-                <h3>2.25. Método (Method)</h3>
+                <h3>Método (Method)</h3>
                 <p>Uma função associada a uma classe, que define um comportamento ou ação que um objeto daquela classe pode realizar.</p>
                 <p>Ex: <code>save(student)</code>, <code>soft_delete(student)</code> na classe <code>Student</code>.</p>
             </div>
 
             <div class="term-entry" id="relacionamentos">
-                <h3>2.26. Relacionamentos (Relationships)</h3>
+                <h3>Relacionamentos (Relationships)</h3>
                 <p>Conexões entre classes ou entidades que descrevem como elas interagem ou se associam.</p>
                 <p>Exemplos dos diagramas:</p>
                 <ul>
@@ -573,28 +573,28 @@
             </div>
 
             <div class="term-entry" id="request">
-                <h3>2.27. Request (Requisição)</h3>
+                <h3>Request (Requisição)</h3>
                 <p>Uma mensagem enviada por um cliente (ex: navegador) para um servidor solicitando uma ação ou recurso.</p>
             </div>
 
             <div class="term-entry" id="response">
-                <h3>2.28. Response (Resposta)</h3>
+                <h3>Response (Resposta)</h3>
                 <p>Uma mensagem enviada por um servidor a um cliente em resposta a uma requisição.</p>
             </div>
 
             <div class="term-entry" id="role">
-                <h3>2.29. Role (Papel/Perfil)</h3>
+                <h3>Role (Papel/Perfil)</h3>
                 <p>Campo associado à entidade <code>User</code> para definir o perfil do usuário no sistema (ex: admin, gestor, profissional da saúde), determinando suas permissões e acesso.</p>
             </div>
 
             <div class="term-entry" id="soft-delete">
-                <h3>2.30. Soft Delete (Exclusão Lógica)</h3>
+                <h3>Soft Delete (Exclusão Lógica)</h3>
                 <p>Marca um registro como inativo (ex: <code>is_active = false</code>) em vez de removê-lo fisicamente do banco de dados.</p>
                 <p>Permite a recuperação de dados (<code>restore_inactive_student</code>).</p>
             </div>
 
             <div class="term-entry" id="sql-data-types">
-                <h3>2.31. SQL Data Types (Tipos de Dados SQL)</h3>
+                <h3>SQL Data Types (Tipos de Dados SQL)</h3>
                 <p>Definem o tipo de dado que uma coluna em uma tabela de banco de dados pode armazenar.</p>
                 <p>Vistos no Diagrama Lógico:</p>
                 <ul>
@@ -606,275 +606,291 @@
             </div>
 
             <div class="term-entry" id="uuid">
-                <h3>2.32. UUID (Universally Unique Identifier)</h3>
+                <h3>UUID (Universally Unique Identifier)</h3>
                 <p>Identificador universalmente único usado como chave primária (pk) para muitas entidades no projeto (ex: <code>Student</code>, <code>User</code>), garantindo que cada registro tenha um ID único globalmente.</p>
             </div>
 
             <div class="term-entry" id="view-django">
-                <h3>2.33. View (Django)</h3>
+                <h3>View (Django)</h3>
                 <p>Como mencionado anteriormente, em Django as regras de negócio são definidas em uma camada de controle chamada de VIEW.</p>
             </div>
         </section>
 
         <section id="acronimos">
-            <h2>3. Acrônimos</h2>
+            <h2>Acrônimos</h2>
 
             <div class="term-entry" id="acro-api">
-                <h3>3.1. API (Application Programming Interface)</h3>
+                <h3>API (Application Programming Interface)</h3>
                 <p>Interface de Programação de Aplicações.</p>
             </div>
 
             <div class="term-entry" id="cep">
-                <h3>3.2. CEP (Código de Endereçamento Postal)</h3>
+                <h3>CEP (Código de Endereçamento Postal)</h3>
                 <p>Número de identificação postal.</p>
             </div>
 
             <div class="term-entry" id="cgm">
-                <h3>3.3. CGM (Código Geral Matrícula)</h3>
+                <h3>CGM (Código Geral Matrícula)</h3>
                 <p>Código de identificação único a cada aluno (funciona como um ID).</p>
             </div>
 
             <div class="term-entry" id="csv">
-                <h3>3.4. CSV (Comma-Separated Values)</h3>
+                <h3>CSV (Comma-Separated Values)</h3>
                 <p>Valores Separados por Vírgula.</p>
                 <p>Formato de arquivo para armazenamento de dados estruturados em tabelas.</p>
             </div>
 
             <div class="term-entry" id="der">
-                <h3>3.5. DER (Diagrama de Entidade-Relacionamento)</h3>
+                <h3>DER (Diagrama de Entidade-Relacionamento)</h3>
                 <p>Modelo de dados que representa entidades e seus relacionamentos.</p>
             </div>
 
             <div class="term-entry" id="dob">
-                <h3>3.6. DOB (Date of Birth)</h3>
+                <h3>DOB (Date of Birth)</h3>
                 <p>Data de nascimento.</p>
             </div>
 
             <div class="term-entry" id="acro-drf">
-                <h3>3.7. DRF (Django REST Framework)</h3>
+                <h3>DRF (Django REST Framework)</h3>
                 <p>Framework para construir APIs Web com Django.</p>
             </div>
 
             <div class="term-entry" id="fk">
-                <h3>3.8. FK (Foreign Key)</h3>
+                <h3>FK (Foreign Key)</h3>
                 <p>Chave Estrangeira.</p>
             </div>
 
             <div class="term-entry" id="http">
-                <h3>3.9. HTTP (Hypertext Transfer Protocol)</h3>
+                <h3>HTTP (Hypertext Transfer Protocol)</h3>
                 <p>Protocolo de Transferência de Hipertexto.</p>
             </div>
 
             <div class="term-entry" id="https">
-                <h3>3.10. HTTPS (Hypertext Transfer Protocol Secure)</h3>
+                <h3>HTTPS (Hypertext Transfer Protocol Secure)</h3>
                 <p>Protocolo de Transferência de Hipertexto Seguro.</p>
                 <p>Protocolo seguro de comunicação utilizado entre o navegador e o servidor.</p>
             </div>
 
             <div class="term-entry" id="mttr">
-                <h3>3.11. MTTR (Mean Time to Repair)</h3>
+                <h3>MTTR (Mean Time to Repair)</h3>
                 <p>Tempo Médio para Reparo.</p>
                 <p>Tempo médio necessário para corrigir falhas no sistema.</p>
             </div>
 
             <div class="term-entry" id="mvc">
-                <h3>3.12. MVC (Model-View-Controller)</h3>
+                <h3>MVC (Model-View-Controller)</h3>
                 <p>Padrão de arquitetura de software que separa a aplicação em três camadas: Model (dados), View (interface do usuário) e Controller (gerencia a lógica de negócio).</p>
                 <p>Django segue um padrão similar chamado MVT (Model-View-Template).</p>
             </div>
 
             <div class="term-entry" id="mvt">
-                <h3>3.13. MVT (Model-View-Template)</h3>
+                <h3>MVT (Model-View-Template)</h3>
                 <p>Termo utilizado no contexto Django, para definir as camadas de um típico projeto MVC.</p>
                 <p>Model, modelo de entidades; View, lógica de negócios; Template, representação visual do sistema.</p>
             </div>
 
+            <div class="term-entry" id="orm">
+                <h3>ORM (Object-Relational Mapping)</h3>
+                <p>Mapeamento Objeto-Relacional.</p>
+                <p>Técnica que permite mapear dados entre sistemas incompatíveis usando linguagens de programação orientadas a objetos.</p>
+                <p>No Django, o ORM permite interagir com o banco de dados usando código Python em vez de SQL diretamente.</p>
+            </div>
+
+            <div class="term-entry" id="pip">
+                <h3>PIP (Pip Installs Packages)</h3>
+                <p>Sistema de gerenciamento de pacotes para Python.</p>
+                <p>Ferramenta de linha de comando usada para instalar, atualizar e gerenciar bibliotecas e dependências Python.</p>
+                <p>Exemplo: <code>pip install django</code> para instalar o framework Django.</p>
+            </div>
+
             <div class="term-entry" id="pk">
-                <h3>3.14. PK (Primary Key)</h3>
+                <h3>PK (Primary Key)</h3>
                 <p>Chave Primária.</p>
                 <p>Identificador primário de uma entidade.</p>
             </div>
 
             <div class="term-entry" id="proamp">
-                <h3>3.15. ProAMP</h3>
+                <h3>ProAMP</h3>
                 <p>Prontuário ANNA MARIA PIETTÁ.</p>
                 <p>Acrônimo usado como nome para a aplicação desenvolvida neste projeto de estágio.</p>
             </div>
 
             <div class="term-entry" id="sql">
-                <h3>3.16. SQL (Structured Query Language)</h3>
+                <h3>SQL (Structured Query Language)</h3>
                 <p>Linguagem de Consulta Estruturada, usada para gerenciar e consultar bancos de dados relacionais.</p>
             </div>
 
             <div class="term-entry" id="uml">
-                <h3>3.17. UML (Unified Modeling Language)</h3>
+                <h3>UML (Unified Modeling Language)</h3>
                 <p>Linguagem de Modelagem Unificada, usada para especificar, visualizar, construir e documentar os artefatos de um sistema de software.</p>
             </div>
 
             <div class="term-entry" id="acro-uuid">
-                <h3>3.18. UUID (Universally Unique Identifier)</h3>
+                <h3>UUID (Universally Unique Identifier)</h3>
                 <p>Identificador universalmente único.</p>
             </div>
 
             <div class="term-entry" id="xlsx">
-                <h3>3.19. XLSX (Excel Open XML Spreadsheet)</h3>
+                <h3>XLSX (Excel Open XML Spreadsheet)</h3>
                 <p>Formato Open XML usado pelo Microsoft Excel.</p>
             </div>
         </section>
 
         <section id="traducoes">
-            <h2>4. Traduções dos campos em inglês</h2>
+            <h2>Traduções dos campos em inglês</h2>
 
             <div class="term-entry" id="address">
-                <h3>4.1. Address (Endereço)</h3>
+                <h3>Address (Endereço)</h3>
                 <p>Endereço completo, com rua e número do estudante.</p>
             </div>
 
             <div class="term-entry" id="city">
-                <h3>4.2. City (Cidade)</h3>
+                <h3>City (Cidade)</h3>
                 <p>Cidade associada ao CEP cadastrado.</p>
             </div>
 
             <div class="term-entry" id="council-number">
-                <h3>4.3. Council_number (Número de conselho)</h3>
+                <h3>Council_number (Número de conselho)</h3>
                 <p>Campo com número de cadastro no conselho regional, específico a cada tipo de profissional da saúde (ex: CREFITO → Conselho Regional de Fisioterapia e Terapia Ocupacional; CRP → Conselho regional de Psicologia).</p>
             </div>
 
             <div class="term-entry" id="created-at">
-                <h3>4.4. Created_at (Criado em)</h3>
+                <h3>Created_at (Criado em)</h3>
                 <p>Representa a data de criação daquela entrada no banco de dados.</p>
             </div>
 
             <div class="term-entry" id="created-by">
-                <h3>4.5. Created_by (Criado por)</h3>
+                <h3>Created_by (Criado por)</h3>
                 <p>Campo com id do usuário que cadastrou esta entrada.</p>
             </div>
 
             <div class="term-entry" id="date">
-                <h3>4.6. Date (Data)</h3>
+                <h3>Date (Data)</h3>
                 <p>Data de cadastro da entidade.</p>
             </div>
 
             <div class="term-entry" id="export-to-xlsx">
-                <h3>4.7. Export_to_xlsx (Exportar para XLSX)</h3>
+                <h3>Export_to_xlsx (Exportar para XLSX)</h3>
                 <p>Método para exportar arquivo de relatório no formato XLSX.</p>
             </div>
 
             <div class="term-entry" id="gender">
-                <h3>4.8. Gender (Gênero)</h3>
+                <h3>Gender (Gênero)</h3>
                 <p>Campo de escolha entre masculino, feminino ou outro.</p>
             </div>
 
             <div class="term-entry" id="guardian">
-                <h3>4.9. Guardian (Responsável)</h3>
+                <h3>Guardian (Responsável)</h3>
                 <p>Nome completo do responsável legal pelo estudante.</p>
             </div>
 
             <div class="term-entry" id="guardian-cpf">
-                <h3>4.10. Guardian_cpf (CPF do responsável)</h3>
+                <h3>Guardian_cpf (CPF do responsável)</h3>
                 <p>CPF de cadastro do responsável.</p>
             </div>
 
             <div class="term-entry" id="first-name">
-                <h3>4.11. First_name (Primeiro nome)</h3>
+                <h3>First_name (Primeiro nome)</h3>
                 <p>Herdado a partir do usuário abstrato do Django, representa apenas o primeiro nome do usuário.</p>
             </div>
 
             <div class="term-entry" id="generate-history">
-                <h3>4.12. Generate_history (Gerar histórico)</h3>
+                <h3>Generate_history (Gerar histórico)</h3>
                 <p>Método para gerar relatório de histórico.</p>
             </div>
 
             <div class="term-entry" id="generate-monthly">
-                <h3>4.13. Generate_montly (Gerar mensal)</h3>
+                <h3>Generate_montly (Gerar mensal)</h3>
                 <p>Método para gerar relatório mensal.</p>
             </div>
 
             <div class="term-entry" id="generated-at">
-                <h3>4.14. Generated_at (Gerado em)</h3>
+                <h3>Generated_at (Gerado em)</h3>
                 <p>Campo com a data de geração do relatório.</p>
             </div>
 
             <div class="term-entry" id="generated-by">
-                <h3>4.15. Generated_by (Gerado por)</h3>
+                <h3>Generated_by (Gerado por)</h3>
                 <p>Campo de associação à entidade <code>User</code> para definir quem gerou aquele relatório.</p>
             </div>
 
             <div class="term-entry" id="healthpro-id">
-                <h3>4.16. Healthpro_id (Identificador do profissional de saúde)</h3>
+                <h3>Healthpro_id (Identificador do profissional de saúde)</h3>
                 <p>Identificador único do profissional que registrou a entrada.</p>
             </div>
 
             <div class="term-entry" id="id">
-                <h3>4.17. Id (Identificador)</h3>
+                <h3>Id (Identificador)</h3>
                 <p>Valor único à cada instância cadastrada no banco.</p>
             </div>
 
             <div class="term-entry" id="is-active">
-                <h3>4.18. Is_active (É ativo)</h3>
+                <h3>Is_active (É ativo)</h3>
                 <p>Representa o campo que define os alunos ativos, ou inativos.</p>
             </div>
 
             <div class="term-entry" id="last-name">
-                <h3>4.19. Last_name (Último nome)</h3>
+                <h3>Last_name (Último nome)</h3>
                 <p>Herdado a partir do usuário abstrato do Django, representa o último nome do usuário (pode conter o nome do meio também).</p>
             </div>
 
             <div class="term-entry" id="medrec-description">
-                <h3>4.20. Medrec_description (Descrição de recomendações clínicas)</h3>
+                <h3>Medrec_description (Descrição de recomendações clínicas)</h3>
                 <p>Campo dedicado à descrição de observações do atendimento clínico.</p>
             </div>
 
             <div class="term-entry" id="name">
-                <h3>4.21. Name (Nome)</h3>
+                <h3>Name (Nome)</h3>
                 <p>Nome completo do estudante em uma única entrada.</p>
             </div>
 
             <div class="term-entry" id="report-type">
-                <h3>4.22. Report_type (Tipo de relatório)</h3>
+                <h3>Report_type (Tipo de relatório)</h3>
                 <p>Campo descritivo de qual tipo de relatório foi gerado (ex: Relatório mensal, histórico e etc...).</p>
             </div>
 
             <div class="term-entry" id="speciality">
-                <h3>4.23. Speciality (Especialidade)</h3>
+                <h3>Speciality (Especialidade)</h3>
                 <p>Campo descritivo da especialização do profissional.</p>
             </div>
 
             <div class="term-entry" id="state">
-                <h3>4.24. State (Estado)</h3>
+                <h3>State (Estado)</h3>
                 <p>Estado de residência cadastrado.</p>
             </div>
 
             <div class="term-entry" id="student-id">
-                <h3>4.25. Student_id (Identificador do estudante)</h3>
+                <h3>Student_id (Identificador do estudante)</h3>
                 <p>Identificador único do estudante associado a aquela entrada.</p>
             </div>
 
             <div class="term-entry" id="password">
-                <h3>4.26. Password (Senha)</h3>
+                <h3>Password (Senha)</h3>
                 <p>Campo de senha, herdado a partir do usuário abstrato do Django.</p>
             </div>
 
             <div class="term-entry" id="patient-evolution">
-                <h3>4.27. Patient_evolution (Evolução do paciente)</h3>
+                <h3>Patient_evolution (Evolução do paciente)</h3>
                 <p>Campo descritivo do que foi feito no atendimento.</p>
             </div>
 
-            <div class="term-entry" id="role-traducao"> <h3>4.28. Role (Papel)</h3>
+            <div class="term-entry" id="role-traducao">
+                <h3>Role (Papel)</h3>
                 <p>Já descrito nos termos técnicos: Campo associado à entidade <code>User</code> para definir o perfil do usuário no sistema.</p>
             </div>
 
             <div class="term-entry" id="updated-at">
-                <h3>4.29. Updated_at (Atualizado em)</h3>
+                <h3>Updated_at (Atualizado em)</h3>
                 <p>Representa a data em que aquela instância foi atualizada.</p>
             </div>
 
             <div class="term-entry" id="updated-by">
-                <h3>4.30. Updated_by (Atualizado por)</h3>
+                <h3>Updated_by (Atualizado por)</h3>
                 <p>Campo com id do último usuário a alterar esta entrada.</p>
             </div>
 
-            <div class="term-entry" id="user-traducao"> <h3>4.31. User (Usuário)</h3>
+            <div class="term-entry" id="user-traducao">
+                <h3>User (Usuário)</h3>
                 <p>Campo que faz refência a alguma entidade de <code>User</code>.</p>
             </div>
         </section>
@@ -905,6 +921,63 @@
         document.addEventListener('DOMContentLoaded', function () {
             const searchInput = document.getElementById('search');
             const terms = document.querySelectorAll('.term-entry');
+
+            const mainSections = document.querySelectorAll('.glossario-container > section');
+            let mainSectionCounter = 1;
+
+            mainSections.forEach(section => {
+                const h2 = section.querySelector('h2');
+                if (h2) {
+                    // Remove qualquer numeração antiga para evitar duplicação
+                    const originalH2Text = h2.textContent.replace(/^(\d+\.)*\d+\.\s*/, '').trim();
+                    h2.textContent = `${mainSectionCounter}. ${originalH2Text}`;
+
+                    const termEntriesInSection = section.querySelectorAll('.term-entry');
+                    let subTermCounter = 1;
+                    termEntriesInSection.forEach(termEntry => {
+                        const h3 = termEntry.querySelector('h3');
+                        if (h3) {
+                            // Remove qualquer numeração antiga
+                            const originalH3Text = h3.textContent.replace(/^(\d+\.)*\d+\.\s*/, '').trim();
+                            h3.textContent = `${mainSectionCounter}.${subTermCounter}. ${originalH3Text}`;
+                            // Armazena o conteúdo original com a nova numeração para o highlight
+                            h3.dataset.originalContent = h3.innerHTML;
+                            subTermCounter++;
+                        }
+                        // Armazena o conteúdo original dos parágrafos também
+                        termEntry.querySelectorAll('p').forEach(p => {
+                            p.dataset.originalContent = p.innerHTML;
+                        });
+                    });
+                    mainSectionCounter++;
+                }
+            });
+            // --- FIM: Numeração dinâmica dos títulos H2 e H3 ---
+
+            // --- INÍCIO: Geração dinâmica do índice (após a numeração dos H2) ---
+            const indexList = document.querySelector('.index-card ul');
+            if (indexList && mainSections.length > 0) {
+                indexList.innerHTML = '';
+
+                mainSections.forEach(section => {
+                    const sectionId = section.id;
+                    const sectionTitleElement = section.querySelector('h2'); // Agora já está numerado
+
+                    if (sectionId && sectionTitleElement) {
+                        const sectionTitleText = sectionTitleElement.textContent; // Pega o título já numerado
+
+                        const listItem = document.createElement('li');
+                        const link = document.createElement('a');
+
+                        link.href = `#${sectionId}`;
+                        link.textContent = sectionTitleText;
+
+                        listItem.appendChild(link);
+                        indexList.appendChild(listItem);
+                    }
+                });
+            }
+            // --- FIM: Geração dinâmica do índice ---
 
             searchInput.addEventListener('input', function(event) {
                 const value = event.target.value.toLowerCase();

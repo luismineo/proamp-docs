@@ -6,6 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='12' y='8' width='40' height='48' rx='6' fill='%2363ACE5'/%3E%3Crect x='18' y='16' width='28' height='36' rx='3' fill='white'/%3E%3Crect x='29' y='30' width='6' height='16' rx='2' fill='%2363ACE5'/%3E%3Crect x='24' y='37' width='16' height='6' rx='2' fill='%2363ACE5'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Documentação do Projeto ProAMP</title>
     <style>
@@ -63,17 +64,20 @@
             align-items: center;
         }
         ul.doc-list li .icon {
-            font-size: 1.3em;
-            margin-right: 10px;
+            font-size: 1.2em;
+            margin-right: 12px;
             color: #63ACE5;
+            width: 1.4em;
+            text-align: center;
         }
         ul.doc-list li a {
             color: #2A4D69;
             text-decoration: none;
             font-weight: 500;
             border-bottom: 1.5px solid #63ACE5;
-            padding-bottom: 1px;
-            transition: color 0.2s, border-color 0.2s;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: color 0.2s, border-color 0.2s, background-color 0.2s;
         }
         ul.doc-list li a:hover,
         ul.doc-list li a:focus {
@@ -110,10 +114,45 @@
             color: #fff;
             text-decoration: none;
         }
+        .back-button {
+            display: none;
+            margin-top: 20px;
+            background: #528fbf;
+            font-weight: 600;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+        .back-button:hover {
+            background: #eaf4fb;
+            color: #4B8673;
+        }
+        footer {
+            font-family: "Lato", sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #888;    
+            font-size: 0.9em; 
+        }
         @media (max-width: 800px) {
             .main-container {
-                padding: 18px 2vw 18px 2vw;
+                padding: 24px 4vw;
                 margin: 16px 2vw 0 2vw;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .glossario-link {
+                padding: 12px 24px;
+                font-size: 1.05em;
+            }
+            footer {
+                padding: 15px;
+                margin-top: 20px;
             }
         }
     </style>
@@ -126,110 +165,37 @@
     </p>
 
     <a class="glossario-link" href="pages/glossario.html">Acessar Glossário do Projeto</a>
+    
     <div class="docs-container">
-        <div class="artefatos-container">
-            <h2 class="section-title">Plano de Estágio</h2>
+        <a id="back-button" class="back-button" href="#">&larr; Voltar</a>
+
+        <div id="main-docs-content">
+            <h2 class="section-title">Documentação Principal</h2>
             <ul class="doc-list">
                 <li>
-                    <span class="icon">📜🖋️</span>
+                    <span class="icon"><i class="fa-solid fa-file-signature"></i></span>
                     <a href="docs/plano-estagio/proamp-plano-de-estagio.pdf" target="_blank">Plano de Estágio</a>
                     <span class="file-type">(PDF)</span>
                 </li>
-            </ul>
-            <h2 class="section-title">Artefatos do Projeto</h2>
-            <ul class="doc-list">
                 <li>
-                    <span class="icon">📄</span>
-                    <a href="docs/artefatos/0-art-glossario-projeto.pdf" target="_blank">Glossário do projeto</a>
+                    <span class="icon"><i class="fa-solid fa-file-signature"></i></span>
+                    <a href="docs/plano-estagio/proamp-plano-de-estagio.pdf" target="_blank">Relatório Final</a>
                     <span class="file-type">(PDF)</span>
                 </li>
                 <li>
-                    <span class="icon">📄</span>
-                    <a href="docs/artefatos/1-art-pedido-investidor.pdf" target="_blank">Pedido do investidor</a>
+                    <span class="icon"><i class="fa-solid fa-file-signature"></i></span>
+                    <a href="docs/plano-estagio/proamp-plano-de-estagio.pdf" target="_blank">Artigo do Projeto</a>
                     <span class="file-type">(PDF)</span>
                 </li>
                 <li>
-                    <span class="icon">📄</span>
-                    <a href="docs/artefatos/2-art-espec-suplementar.pdf" target="_blank">Especificação Suplementar</a>
-                    <span class="file-type">(PDF)</span>
+                    <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                    <a href="#" class="folder-link" data-content="artefatos">Artefatos do Projeto</a>
+                    <span class="file-type">(Documentos de Especificação)</span>
                 </li>
                 <li>
-                    <span class="icon">📄</span>
-                    <a href="docs/artefatos/3-art-visao.pdf" target="_blank">Documento de Visão</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <a href="docs/artefatos/4-art-espec-caso-uso.pdf" target="_blank">Especificação de caso de uso: Gerenciamento de alunos</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-            </ul>
-        </div>
-        <div class="diagramas-container">
-            <h2 class="section-title">Diagramas do Projeto</h2>
-            <ul class="doc-list">
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/0-diagramas-merged.pdf" target="_blank">Todos os Diagramas</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/1-diagramas-caso-de-uso.pdf" target="_blank">Diagrama de Caso de Uso</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/2-diagramas-classe.pdf" target="_blank">Diagrama de Classe</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/3-diagramas-estado.pdf" target="_blank">Diagrama de Estado</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/4-diagramas-implantacao.pdf" target="_blank">Diagrama de Implantação</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/5-diagramas-sequencia.pdf" target="_blank">Diagrama de Sequência</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-                <li>
-                    <span class="icon">📊</span>
-                    <a href="docs/diagramas/6-diagramas-der.pdf" target="_blank">Diagrama de Entidade-Relacionamento</a>
-                    <span class="file-type">(PDF)</span>
-                </li>
-
-                <h2 class="section-title">Diagramas em SVG</h2>
-                
-                <li>
-                    <span class="icon">🖼️</span>
-                    <a href="docs/diagramas/svg/svg-diagrama-caso-de-uso.svg" target="_blank">Diagrama de Caso de Uso</a>
-                    <span class="file-type">(SVG)</span>
-                </li>
-                <li>
-                    <span class="icon">🖼️</span>
-                    <a href="docs/diagramas/svg/svg-diagrama-de-classe.svg" target="_blank">Diagrama de Classe</a>
-                    <span class="file-type">(SVG)</span>
-                </li>
-                <li>
-                    <span class="icon">🖼️</span>
-                    <a href="docs/diagramas/svg/svg-diagrama-de-estado.svg" target="_blank">Diagrama de Estado</a>
-                    <span class="file-type">(SVG)</span>
-                </li>
-                <li>
-                    <span class="icon">🖼️</span>
-                    <a href="docs/diagramas/svg/svg-diagrama-de-implantacao.svg" target="_blank">Diagrama de Implantação</a>
-                    <span class="file-type">(SVG)</span>
-                </li>
-                <li>
-                    <span class="icon">🖼️</span>
-                    <a href="docs/diagramas/svg/svg-diagrama-de-sequencia.svg" target="_blank">Diagrama de Sequência</a>
-                    <span class="file-type">(SVG)</span>
+                    <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                    <a href="#" class="folder-link" data-content="diagramas">Diagramas do Projeto</a>
+                    <span class="file-type">(Modelos Visuais do Sistema)</span>
                 </li>
             </ul>
         </div>
@@ -238,14 +204,157 @@
     <h2 class="section-title">Links Úteis</h2>
     <ul class="doc-list">
       <li>
-        <span class="icon">🌐</span>
+        <span class="icon"><i class="fa-brands fa-github"></i></span>
         <a href="https://github.com/luismineo/proamp-docs" target="_blank">Repositório deste projeto no GitHub</a>
       </li>
       <li>
-        <span class="icon">🌐</span>
+        <span class="icon"><i class="fa-brands fa-github"></i></span>
         <a href="https://github.com/Estagio-UniFil/estagio-pront" target="_blank">Repositório do ProAMP no GitHub</a>
       </li>
     </ul>
   </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const docsContainer = document.querySelector('.docs-container');
+        const mainContentContainer = document.getElementById('main-docs-content');
+        const backButton = document.getElementById('back-button');
+
+        // Pilha para guardar o histórico de navegação
+        let historyStack = [];
+
+        // Objeto com os conteúdos de cada pasta
+        const dynamicContent = {
+            // NÍVEL 1: ARTEFATOS
+            artefatos: `
+                <h2 class="section-title">Artefatos do Projeto</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/0-art-glossario-projeto.pdf" target="_blank">Glossário do projeto</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/1-art-pedido-investidor.pdf" target="_blank">Pedido do investidor</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/2-art-espec-suplementar.pdf" target="_blank">Especificação Suplementar</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/3-art-visao.pdf" target="_blank">Documento de Visão</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-folder"></i></span><a href="#" class="folder-link" data-content="useCases">Especificações de Caso de Uso</a><span class="file-type">(7 arquivos)</span></li>
+                </ul>
+            `,
+            // NÍVEL 1: DIAGRAMAS
+            diagramas: `
+                <h2 class="section-title">Diagramas do Projeto</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/0-diagramas-merged.pdf" target="_blank">Todos os Diagramas</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/1-diagramas-caso-de-uso.pdf" target="_blank">Diagrama de Caso de Uso</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/2-diagramas-classe.pdf" target="_blank">Diagrama de Classe</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/3-diagramas-estado.pdf" target="_blank">Diagrama de Estado</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/4-diagramas-implantacao.pdf" target="_blank">Diagrama de Implantação</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/6-diagramas-der.pdf" target="_blank">Diagrama de Entidade-Relacionamento</a><span class="file-type">(PDF)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-folder"></i></span><a href="#" class="folder-link" data-content="sequenceDiagrams">Diagramas de Sequência</a><span class="file-type">(7 diagramas)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-folder"></i></span><a href="#" class="folder-link" data-content="diagramasSVG">Diagramas em SVG</a><span class="file-type">(Vetoriais)</span></li>
+                </ul>
+            `,
+            // NÍVEL 2: CASOS DE USO (DENTRO DE ARTEFATOS)
+            useCases: `
+                <h2 class="section-title">Especificações de Caso de Uso</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-01-manage-users.pdf" target="_blank">ECU: Gerenciar Usuários</a><span class="file-type">(PDF)</span></li>
+    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-02-manage-students.pdf" target="_blank">ECU: Gerenciar de Estudantes</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-03-view-all-health-pros.pdf" target="_blank">ECU: Visualizar Todos os Profissionais de Saúde</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-04-manage-profile.pdf" target="_blank">ECU: Gerenciar Perfil</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-05-view-student-detail.pdf" target="_blank">ECU: Ver Detalhes do Estudante</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-06-generate-general-monthly-report.pdf" target="_blank">ECU: Gerar Relatório Mensal</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-file-lines"></i></span><a href="docs/artefatos/especificacoes-caso-de-uso/specuc-07-generate-specific-report.pdf" target="_blank">ECU: Gerar Relatório Específico</a><span class="file-type">(PDF)</span></li>
+                </ul>
+            `,
+            // NÍVEL 2: DIAGRAMAS DE SEQUÊNCIA PDF (DENTRO DE DIAGRAMAS)
+            sequenceDiagrams: `
+                <h2 class="section-title">Diagramas de Sequência (PDF)</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Gerenciar de Usuários</a><span class="file-type">(PDF)</span></li>
+    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Gerenciar de Estudantes</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Visualizar Todos os Profissionais de Saúde</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Gerenciar Perfil</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Ver Detalhes do Estudante</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Gerar Relatório Mensal</a><span class="file-type">(PDF)</span></li>
+                    
+                    <li><span class="icon"><i class="fa-solid fa-sitemap"></i></span><a href="docs/diagramas/sequencia/seq-login.pdf" target="_blank">Sequência: Gerar Relatório Específico</a><span class="file-type">(PDF)</span></li>
+                </ul>
+            `,
+            // NÍVEL 2: DIAGRAMAS SVG (DENTRO DE DIAGRAMAS)
+            diagramasSVG: `
+                <h2 class="section-title">Diagramas em SVG</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-caso-de-uso.svg" target="_blank">Diagrama de Caso de Uso</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-classe.svg" target="_blank">Diagrama de Classe</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-estado.svg" target="_blank">Diagrama de Estado</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-implantacao.svg" target="_blank">Diagrama de Implantação</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-folder"></i></span><a href="#" class="folder-link" data-content="diagramasSeqSVG">Diagramas de Sequência SVG</a><span class="file-type">(7 diagramas)</span></li>
+                    </ul>
+            `,
+            // NÍVEL 3: DIAGRAMAS DE SEQUÊNCIA EM SVG (DENTRO DE DIAGRAMAS SVG)
+            diagramasSeqSVG: `
+                <h2 class="section-title">Diagramas de Sequência SVG</h2>
+                <ul class="doc-list">
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-caso-de-uso.svg" target="_blank">Sequência: Gerenciar de Usuários</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-sequencia.svg" target="_blank">Sequência: Gerenciar de Estudantes</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-estado.svg" target="_blank">Sequência: Visualizar Todos os Profissionais de Saúde</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-implantacao.svg" target="_blank">Sequência: Gerenciar Perfil</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-sequencia.svg" target="_blank">Sequência: Ver Detalhes do Estudante</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-estado.svg" target="_blank">Sequência: Gerar Relatório Mensal</a><span class="file-type">(SVG)</span></li>
+                    <li><span class="icon"><i class="fa-solid fa-file-image"></i></span><a href="docs/diagramas/svg/svg-diagrama-de-estado.svg" target="_blank">Sequência: Gerar Relatório Específico</a><span class="file-type">(SVG)</span></li>
+                </ul>
+            `,
+        };
+
+        // Renderização
+        function renderContent(contentKey) {
+            if (dynamicContent[contentKey]) {
+                mainContentContainer.innerHTML = dynamicContent[contentKey];
+                backButton.style.display = 'inline-block';
+            } else {
+                console.error("Conteúdo para a chave '" + contentKey + "' não encontrado.");
+            }
+        }
+
+        // Listener para o container de docs
+        docsContainer.addEventListener('click', function (event) {
+            const folderLink = event.target.closest('.folder-link');
+            const backLink = event.target.closest('#back-button');
+
+            // Pasta
+            if (folderLink) {
+                event.preventDefault();
+                // Salva o estado HTML atual na pilha de histórico
+                historyStack.push(mainContentContainer.innerHTML);
+                
+                const contentKey = folderLink.dataset.content;
+                renderContent(contentKey);
+            }
+
+            // Voltar
+            if (backLink) {
+                event.preventDefault();
+                if (historyStack.length > 0) {
+                    mainContentContainer.innerHTML = historyStack.pop();
+                }
+                if (historyStack.length === 0) {
+                    backButton.style.display = 'none';
+                }
+            }
+        });
+    });
+</script>
 </body>
+
+<footer>
+    <p>Luis Afonso Mineo &copy; 2025</p>
+</footer>
 </html>
